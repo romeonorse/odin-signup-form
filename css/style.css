@@ -1,0 +1,124 @@
+:root {
+  --site-color: rgba(0, 0, 128, 0.671);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: #ccc;
+  color: #333;
+  height: 100vh;
+  padding: 3rem;
+}
+
+.container {
+  max-width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  background: url('../img/background.jpg') no-repeat center center/cover;
+  padding: 2rem;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+h1 {
+  color: var(--site-color);
+}
+
+.form-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+legend {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  border: none;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+input {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+input:focus {
+  outline: 1px solid #333;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #ccc;
+  color: var(--site-color);
+  border-radius: 1rem;
+  border: 1px solid var(--site-color);
+  font-family: 'Oswald', sans-serif;
+}
+
+.btn:hover {
+  background-color: #333;
+  color: #ccc;
+  box-shadow: 0.1rem;
+  border: 1px solid #333;
+}
+
+a {
+  text-decoration: none;
+  color: var(--site-color);
+}
+
+
+
